@@ -56,6 +56,13 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
+
+        <Button
+          type="default"
+          style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+        >
+          Download Data
+        </Button>
       </div>
 
       <div className="middle-section">
@@ -76,10 +83,11 @@ function RenderLandingPage(props) {
       </div>
       <div>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
-        {/* <div className="bottom-section">*/}
+        <div className="bottom-section">
         <p onClick={() => scrollToTop()} className="back-to-top">
           Back To Top ^
         </p>
+        </div>
       </div>
     </div>
   );
