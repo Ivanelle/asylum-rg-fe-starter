@@ -16,21 +16,40 @@
     height: 20vh;
     margin-bottom: 10%;
 }
+#header {
+    height: 40vh;
+}
 
 .hrf-logo-img-container img {
     height: 64px;
     width: 98px;
-    margin-left: 15%;
+    margin: 15%;
 }
 
 .header-text-container {
     text-align: center;
+    height:10vh;
     width: 100%;
     align-items: center;
 }
 
+#header-text {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    // justify-content: center;
+}
+
+#header-text h1 {
+    padding-top: 0;      
+}
+
+#header-text h3 {
+    font-size: larger; 
+}
+
 .header-text-container h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: @white;
     font-family: 'moneta';
 }

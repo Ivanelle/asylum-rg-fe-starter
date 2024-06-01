@@ -20,8 +20,8 @@ function RenderLandingPage(props) {
 
   return (
     <div className="main">
-      <div className="header">
-        <div className="header-text-container">
+      <div className="header" id="header">
+        <div className="header-text-container" id="header-text">
           <h1>Asylum Office Grant Rate Tracker</h1>
           <h3>
             The Asylum Office Grant Rate Tracker provides asylum seekers,
@@ -121,6 +121,14 @@ function RenderLandingPage(props) {
               asylum office.
             </p>
           </div>
+        </div>
+        <div>
+          <Button
+            type="default"
+            style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+          >
+            Read More
+          </Button>
         </div>
         <p onClick={() => scrollToTop()} className="back-to-top">
           Back To Top ^
