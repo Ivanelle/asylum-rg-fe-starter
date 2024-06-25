@@ -13,7 +13,7 @@ import PageNav from '../../common/PageNav';
 function RenderLandingPage(props) {
   const scrollToTop = () => {
     document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
   };
 
   const history = useHistory();
@@ -34,17 +34,18 @@ function RenderLandingPage(props) {
       {/* Graphs Section: Add code here for the graphs section for your first ticket */}
       <div className="graphs-section">
         <div className='image-container'>
-          <div className='graphs'>
+
+          <div>
             <img src={GrantRatesByOfficeImg} alt="Grant Rates By Office" className="grbo-img"/>
             <figcaption>Search Grant Rates By Office</figcaption>
           </div>
 
-          <div className="graphs">
+          <div>
             <img src={GrantRatesByNationalityImg} alt="Grant Rates By Nationality" className="grbn-img"/>
             <figcaption>Search Grant Rates By Nationality</figcaption>
           </div>
 
-          <div className="graphs">
+          <div>
             <img src={GrantRatesOverTimeImg} alt="Grant Rates By Over Time" className="grbot-img"/>
             <figcaption>Search Grant Rates Over Time</figcaption>
           </div>
@@ -66,7 +67,6 @@ function RenderLandingPage(props) {
           <Button
             type="default"
             style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-            onClick={() => history.push('/graphs')}
           >
             Download the Data
           </Button>
@@ -93,7 +93,7 @@ function RenderLandingPage(props) {
       <div>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
         <div className="bottom-header-container">
-          <header id="bottom-header">
+          <header>
             <h2>Systemic Disparity Insights</h2>
           </header>
         </div>
